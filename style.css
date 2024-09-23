@@ -135,7 +135,7 @@ header {
   animation: rotating 4000ms linear infinite;
 }
 
-@-webkit-keyframes rotating /* Safari and Chrome */ {
+@keyframes rotating /* Safari and Chrome */ {
   from {
     -webkit-transform: rotate(0deg);
     -o-transform: rotate(0deg);
