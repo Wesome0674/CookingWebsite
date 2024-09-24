@@ -21,6 +21,7 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   background: var(--bg-primaire);
+  padding: 0 15px;
 }
 
 .title {
@@ -127,6 +128,7 @@ header {
   margin: 20px 0px ;
   border-radius: 30px;
   display: flex;
+  width: 100%;
 }
 
 .right-panel::before {
@@ -156,19 +158,18 @@ header {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   gap: 104px;
-
-  background-color: #e7fafe;
+  width: 100%;
   width: 50%;
+  background-color: #e7fafe;
 }
 .right-panel {
   display: flex;
-  width: 50%;
   position: relative;
+  width: 50%;
 }
 .right-panel img {
   object-fit: cover;
   width: 100%;
-  height: 100%;
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
@@ -211,6 +212,8 @@ header {
 .cards {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
   justify-content: space-between;
   width: 100%;
   margin-top: 80px;
@@ -277,6 +280,10 @@ section {
   align-items: center;
 }
 
+section img {
+  max-width: 50vw;
+}
+
 .chef-info div{
   display: flex;
   flex-direction: column;
@@ -287,6 +294,8 @@ section {
 .chef-info > * {
   max-width: 520px;
 }
+
+
 
 .insta-section {
   display: flex;
@@ -304,6 +313,12 @@ section {
   margin-right: 80px;
 }
 
+.insta-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 form{
   display: flex;
   align-items: center;
@@ -312,6 +327,7 @@ form{
   margin-top: 64px;
   border-radius: 24px;
   padding: 10px;
+  z-index: 10;
 }
 
 .input-section {
@@ -380,6 +396,95 @@ input:focus {
   justify-content: space-between;
 }
 
+
+
 footer {
   margin: 160px 0 48px 0;
+}
+
+
+@media (max-width: 1250px) {
+  .grid{
+   
+    grid-template-columns: repeat(3, 320px);
+    
+  }
+
+  h1 {
+    font-size: 48px;
+    
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  .main-button, .secondary, .badge, .light-text {
+    font-size: 12px;
+  }
+
+ 
+  
+}
+
+@media (max-width: 1000px) {
+  .grid{
+   
+    grid-template-columns: repeat(2, 300px);
+    
+  }
+
+  .menu {
+    display: none;
+  }
+  .footer-top ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+ 
+  
+  
+}
+
+@media (max-width: 650px) {
+  .grid{
+    grid-template-columns: repeat(1, 80%);
+    flex-direction: column;
+    display: flex;
+    
+  }
+
+form{
+  width: auto;
+}
+
+input {
+  font-size: 10px;
+}
+
+.input-section::before {
+  display: none;
+}
+
+.input-section::after {
+  display: none;
+}
+.insta-img img {
+  margin: 20px 0;
+}
+.insta-img {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  flex-direction: column;
+}
+
+section img {
+  max-width: 90vw;
+  margin-top: 25px;
+}
 }
