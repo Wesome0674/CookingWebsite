@@ -17,10 +17,10 @@ body {
 }
 
 .container {
-  width: 100%;
+  max-width: 1640px;
   min-height: 100vh;
+  margin: 0 auto;
   background: var(--bg-primaire);
-  padding: 0 80px;
 }
 
 .title {
@@ -55,6 +55,7 @@ li {
   display: flex;
   flex-direction: row;
   gap: 40px;
+  cursor: pointer;
 }
 
 .badge {
@@ -79,6 +80,7 @@ li {
   border-radius: 16px;
   font-size: 16px;
   border: none;
+  cursor: pointer;
 }
 
 .main-content {
@@ -122,7 +124,7 @@ li {
 }
 
 header {
-  margin: 20px;
+  margin: 20px 0px ;
   border-radius: 30px;
   display: flex;
 }
@@ -150,7 +152,7 @@ header {
 
 .left-panel {
   display: grid;
-  place-content: center;
+  padding: 80px;
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
   gap: 104px;
@@ -172,7 +174,7 @@ header {
 }
 
 .title {
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 200;
 }
 
@@ -190,6 +192,7 @@ header {
   flex-direction: column;
   padding: 30px 30px;
   gap: 50px;
+  cursor: pointer;
   background: #e8e8e8;
   box-shadow: 20px 20px 60px #e7e6e6,
      -20px -20px 60px #ffffff;
@@ -202,7 +205,7 @@ header {
 
 .categories {
   width: 100%;
-  padding: 160px 80px;
+  padding: 160px 0;
 }
 
 .cards {
@@ -229,22 +232,20 @@ h2 {
   font-size: 16px;
   border: none;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .grid{
   display: grid;
   grid-template-columns: repeat(3, 400px);
   row-gap: 50px;
-  column-gap: 150px;
+  justify-content: space-between;
   margin-top: 96px;
 }
 
 .recettes {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
+  margin: 143px 0;
 }
 
 .top-info {
@@ -256,7 +257,6 @@ h2 {
 }
 
 .grid-box {
-  width: 400px;
   display: flex;
   flex-direction: column;
   background-color: #e7fafe;
@@ -269,4 +269,117 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chef-info div{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 86px
+}
+
+.chef-info > * {
+  max-width: 520px;
+}
+
+.insta-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+  padding: 80px 0;
+  margin: 80px 0;
+  width: 100%;
+  background: rgb(231,249,253);
+  background: linear-gradient(180deg, rgba(231,249,253,0) 0%, rgba(231,249,253,1) 100%);
+}
+
+.insta-img img {
+  margin-right: 80px;
+}
+
+form{
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  width: 480px;
+  margin-top: 64px;
+  border-radius: 24px;
+  padding: 10px;
+}
+
+.input-section {
+  background-color: rgb(231,249,253);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 80px;
+  align-items: center;
+  margin-bottom: 80px;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 14px;
+  padding-left: 22px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.input-section::before {
+  content: url(/assets/svg/form1.svg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+ 
+}
+
+.input-section::after {
+  content: url(/assets/svg/form2.svg);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+ 
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+  padding-bottom: 48px;
+}
+
+.footer-top ul {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  cursor: pointer;
+}
+
+.footer-left img {
+  margin-bottom: 16px;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer {
+  margin: 160px 0 48px 0;
 }
