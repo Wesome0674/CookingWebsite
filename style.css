@@ -131,6 +131,8 @@ header {
   width: 100%;
 }
 
+/* Badge Header */
+
 .right-panel::before {
   content: url(/assets/svg/Badge.svg);
   position: absolute;
