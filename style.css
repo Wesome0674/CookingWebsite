@@ -471,6 +471,15 @@ footer {
     
   }
 
+  .input-section {
+    padding: 40px;
+  }
+
+  h1 {
+    font-size: 36px;
+    
+  }
+
 form{
   width: auto;
 }
