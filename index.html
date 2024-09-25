@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Foodieland</title>
   </head>
   <body>
+    <!--Conteneur du site-->
     <div class="container">
+      <!--Barre de navigation-->
       <nav>
         <div class="logo">
           <img src="/assets/svg/Foodieland..svg" alt="logo" />
@@ -27,7 +30,8 @@
           <img class="social-icon" src="/assets/svg/instagram.svg" alt="" />
         </div>
       </nav>
-      <header> 
+      <!--Header du site avec la recette tendance-->
+      <header>
         <div class="left-panel">
           <div class="main-content">
             <div class="badge">
@@ -35,10 +39,10 @@
               <p>Hot Recipes</p>
             </div>
             <div class="title">
-              <h1>Spicy delicious</h1>
-              <h1>chicken wings</h1>
+              <h1 data-aos="zoom-in">Spicy delicious</h1>
+              <h1 data-aos="zoom-in">chicken wings</h1>
             </div>
-            <p class="light-text" style="max-width: 520px;">
+            <p class="light-text" style="max-width: 520px">
               Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad
               minim
@@ -56,7 +60,7 @@
           </div>
           <div class="action">
             <div class="profile">
-                <img src="/assets/png/profile.png" alt="" />
+              <img src="/assets/png/profile.png" alt="" />
               <div class="profile-content">
                 <strong>John Smith</strong>
                 <p class="light-text">15 March 2024</p>
@@ -64,233 +68,251 @@
             </div>
             <button class="main-button">
               <p>View Recipes</p>
-              <img src="/assets/png/PlayCircle.png" alt="">
+              <img src="/assets/png/PlayCircle.png" alt="" />
             </button>
           </div>
         </div>
         <div class="right-panel">
-          <img src="/assets/png/imgHeader.png"  alt="">
+          <img src="/assets/png/imgHeader.png" alt="" />
         </div>
       </header>
+      <!--Partie des catégorie de nourriture-->
       <div class="categories">
         <div class="action">
           <h2>Categories</h2>
-          <button class="secondary">
-            View All Categories
-          </button>
+          <button class="secondary">View All Categories</button>
         </div>
         <div class="cards">
-          <div class="box">
-            <img src="/assets/svg/breakfast.svg" alt="">
+          <div data-aos="fade-right" class="box">
+            <img src="/assets/svg/breakfast.svg" alt="" />
             <p class="categorie-title">Breakfast</p>
           </div>
-          <div class="box">
-            <img src="/assets/svg/vegan.svg" alt="">
+          <div data-aos="fade-right" class="box">
+            <img src="/assets/svg/vegan.svg" alt="" />
             <p class="categorie-title">Vegan</p>
           </div>
-          <div class="box">
-            <img src="/assets/svg/meat.svg" alt="">
+          <div data-aos="fade-right" class="box">
+            <img src="/assets/svg/meat.svg" alt="" />
             <p class="categorie-title">Meat</p>
           </div>
-          <div class="box">
-            <img src="/assets/svg/dessert.svg" alt="">
+          <div data-aos="fade-right" class="box">
+            <img src="/assets/svg/dessert.svg" alt="" />
             <p class="categorie-title">Dessert</p>
           </div>
-          <div class="box">
-            <img src="/assets/svg/lunch.svg" alt="">
+          <div data-aos="fade-right" class="box">
+            <img src="/assets/svg/lunch.svg" alt="" />
             <p class="categorie-title">Lunch</p>
           </div>
-          <div class="box">
-            <img src="/assets/svg/chocolate.svg" alt="">
+          <div data-aos="fade-right" class="box">
+            <img src="/assets/svg/chocolate.svg" alt="" />
             <p class="categorie-title">Chocolate</p>
           </div>
         </div>
       </div>
+      <!--Idée de recette proposé -->
       <div class="recettes">
         <div class="top-info">
           <h2>Simple and tasty recipes</h2>
-          <p class="light-text " style="text-align: center;">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim </p>
+          <p class="light-text" style="text-align: center">
+            Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqut enim ad minim
+          </p>
         </div>
         <div class="grid">
-          <div class="grid-box">
-            <img src="/assets/png/burger.png" alt="">
+          <div data-aos="fade-down" class="grid-box">
+            <img src="/assets/png/burger.png" alt="" />
             <div class="recette-info">
               <h3>Gig and Juicy Wagyu Beef Cheeseburger</h3>
               <div class="moreinfo">
-              <div>
-                <img src="/assets/png/Timer.png" alt="" />
-                <p class="light-text">30 Minutes</p>
+                <div>
+                  <img src="/assets/png/Timer.png" alt="" />
+                  <p class="light-text">30 Minutes</p>
+                </div>
+                <div>
+                  <img src="/assets/png/ForkKnife.png" alt="" />
+                  <p class="light-text">Snack</p>
+                </div>
               </div>
-              <div>
-                <img src="/assets/png/ForkKnife.png" alt="" />
-                <p class="light-text">Snack</p>
-              </div>
-            </div>
             </div>
           </div>
-          <div class="grid-box">
-            <img src="/assets/png/Group-2.png" alt="">
+          <div data-aos="fade-down" class="grid-box">
+            <img src="/assets/png/Group-2.png" alt="" />
             <div class="recette-info">
               <h3>Fresh Lime Roasted Salmon with Ginger Sauce</h3>
               <div class="moreinfo">
-              <div>
-                <img src="/assets/png/Timer.png" alt="" />
-                <p class="light-text">30 Minutes</p>
+                <div>
+                  <img src="/assets/png/Timer.png" alt="" />
+                  <p class="light-text">30 Minutes</p>
+                </div>
+                <div>
+                  <img src="/assets/png/ForkKnife.png" alt="" />
+                  <p class="light-text">Fish</p>
+                </div>
               </div>
-              <div>
-                <img src="/assets/png/ForkKnife.png" alt="" />
-                <p class="light-text">Fish</p>
-              </div>
-            </div>
             </div>
           </div>
-          <div class="grid-box">
-            <img src="/assets/png/Group-5.png" alt="">
+          <div data-aos="fade-down" class="grid-box">
+            <img src="/assets/png/Group-5.png" alt="" />
             <div class="recette-info">
               <h3>Strawberry Oatmeal Pancake with Honey Syrup</h3>
               <div class="moreinfo">
-              <div>
-                <img src="/assets/png/Timer.png" alt="" />
-                <p class="light-text">30 Minutes</p>
+                <div>
+                  <img src="/assets/png/Timer.png" alt="" />
+                  <p class="light-text">30 Minutes</p>
+                </div>
+                <div>
+                  <img src="/assets/png/ForkKnife.png" alt="" />
+                  <p class="light-text">Breakfast</p>
+                </div>
               </div>
-              <div>
-                <img src="/assets/png/ForkKnife.png" alt="" />
-                <p class="light-text">Breakfast</p>
-              </div> 
-            </div>
             </div>
           </div>
-          <div class="grid-box">
-            <img src="/assets/png/Group-1.png" alt="">
+          <div data-aos="fade-down" data-aos-delay="300" class="grid-box">
+            <img src="/assets/png/Group-1.png" alt="" />
             <div class="recette-info">
               <h3>Fresh and Healthy Mixed Mayonnaise Salad</h3>
               <div class="moreinfo">
-              <div>
-                <img src="/assets/png/Timer.png" alt="" />
-                <p class="light-text">30 Minutes</p>
+                <div>
+                  <img src="/assets/png/Timer.png" alt="" />
+                  <p class="light-text">30 Minutes</p>
+                </div>
+                <div>
+                  <img src="/assets/png/ForkKnife.png" alt="" />
+                  <p class="light-text">Healthy</p>
+                </div>
               </div>
-              <div>
-                <img src="/assets/png/ForkKnife.png" alt="" />
-                <p class="light-text">Healthy</p>
-              </div>
-            </div>
             </div>
           </div>
-          <div class="grid-box">
-            <img src="/assets/png/Group-4.png" alt="">
+          <div data-aos="fade-down" data-aos-delay="300" class="grid-box">
+            <img src="/assets/png/Group-4.png" alt="" />
             <div class="recette-info">
               <h3>Chicken Meatballs with Cream Cheese</h3>
               <div class="moreinfo">
-              <div>
-                <img src="/assets/png/Timer.png" alt="" />
-                <p class="light-text">30 Minutes</p>
-              </div>
-              <div>
-                <img src="/assets/png/ForkKnife.png" alt="" />
-                <p class="light-text">Meat</p>
+                <div>
+                  <img src="/assets/png/Timer.png" alt="" />
+                  <p class="light-text">30 Minutes</p>
+                </div>
+                <div>
+                  <img src="/assets/png/ForkKnife.png" alt="" />
+                  <p class="light-text">Meat</p>
+                </div>
               </div>
             </div>
-            </div>
           </div>
-          <div class="grid-box" style="background-color: transparent; object-fit: cover;">
-            <img src="/assets/png/Ads.png" alt="">
+          <div
+            data-aos="fade-down"
+            data-aos-delay="300"
+            class="grid-box"
+            style="background-color: transparent; object-fit: cover"
+          >
+            <img src="/assets/png/Ads.png" alt="" />
           </div>
-          <div class="grid-box">
-            <img src="/assets/png/Group.png" alt="">
+          <div data-aos="fade-down" data-aos-delay="500" class="grid-box">
+            <img src="/assets/png/Group.png" alt="" />
             <div class="recette-info">
               <h3>Fruity Pancake with Orange & Blueberry</h3>
               <div class="moreinfo">
-              <div>
-                <img src="/assets/png/Timer.png" alt="" />
-                <p class="light-text">30 Minutes</p>
+                <div>
+                  <img src="/assets/png/Timer.png" alt="" />
+                  <p class="light-text">30 Minutes</p>
+                </div>
+                <div>
+                  <img src="/assets/png/ForkKnife.png" alt="" />
+                  <p class="light-text">Sweet</p>
+                </div>
               </div>
-              <div>
-                <img src="/assets/png/ForkKnife.png" alt="" />
-                <p class="light-text">Sweet</p>
-              </div>
-            </div>
             </div>
           </div>
-          <div class="grid-box">
-            <img src="/assets/png/Group-3.png" alt="">
+          <div data-aos="fade-down" data-aos-delay="500" class="grid-box">
+            <img src="/assets/png/Group-3.png" alt="" />
             <div class="recette-info">
               <h3>The Best Easy One Pot Chicken and Rice</h3>
               <div class="moreinfo">
-              <div>
-                <img src="/assets/png/Timer.png" alt="" />
-                <p class="light-text">30 Minutes</p>
+                <div>
+                  <img src="/assets/png/Timer.png" alt="" />
+                  <p class="light-text">30 Minutes</p>
+                </div>
+                <div>
+                  <img src="/assets/png/ForkKnife.png" alt="" />
+                  <p class="light-text">Snack</p>
+                </div>
               </div>
-              <div>
-                <img src="/assets/png/ForkKnife.png" alt="" />
-                <p class="light-text">Snack</p>
-              </div>
-            </div>
             </div>
           </div>
-          <div class="grid-box">
-            <img src="/assets/png/Group-6.png" alt="">
+          <div data-aos="fade-down" data-aos-delay="500" class="grid-box">
+            <img src="/assets/png/Group-6.png" alt="" />
             <div class="recette-info">
               <h3>The Creamiest Creamy Chicken and Bacon Pasta</h3>
               <div class="moreinfo">
-              <div>
-                <img src="/assets/png/Timer.png" alt="" />
-                <p class="light-text">30 Minutes</p>
+                <div>
+                  <img src="/assets/png/Timer.png" alt="" />
+                  <p class="light-text">30 Minutes</p>
+                </div>
+                <div>
+                  <img src="/assets/png/ForkKnife.png" alt="" />
+                  <p class="light-text">Noodles</p>
+                </div>
               </div>
-              <div>
-                <img src="/assets/png/ForkKnife.png" alt="" />
-                <p class="light-text">Noodles</p>
-              </div>
-            </div>
             </div>
           </div>
         </div>
-      </div> 
+      </div>
+      <!--Partie avec éléments de réassurance pour le client -->
       <section>
         <div class="chef-info">
           <div>
-            <h2>Everyone can be a
-              chef in their own kitchen
-            </h2>
+            <h2>Everyone can be a chef in their own kitchen</h2>
             <p class="light-text">
-              Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim 
+              Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad
+              minim
             </p>
           </div>
           <button class="main-button">Learn More</button>
         </div>
-          <img src="/assets/png/chef.png" alt="">
+        <img src="/assets/png/chef.png" alt="" />
       </section>
+      <!--Partie avec les posts instagram des utlisateurs.-->
       <div class="insta-section">
         <div class="top-info">
           <h2>Check out @foodieland on Instagram</h2>
-          <p class="light-text " style="text-align: center;">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim   </p>
+          <p class="light-text" style="text-align: center">
+            Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqut enim ad minim
+          </p>
         </div>
         <div class="insta-img">
-          <img src="/assets/png/Post.png" alt="">
-          <img src="/assets/png/Post-1.png" alt="">
-          <img src="/assets/png/Post-2.png" alt="">
-          <img src="/assets/png/Post-3.png" alt="">
+          <img data-aos="fade-right" src="/assets/png/Post.png" alt="" />
+          <img data-aos="fade-right" src="/assets/png/Post-1.png" alt="" />
+          <img data-aos="fade-right" src="/assets/png/Post-2.png" alt="" />
+          <img data-aos="fade-right" src="/assets/png/Post-3.png" alt="" />
         </div>
         <button class="main-button">
           Visit Our Instagram
-          <img src="/assets/svg/instaLogo.svg" alt="">
+          <img src="/assets/svg/instaLogo.svg" alt="" />
         </button>
       </div>
+      <!--Formulaire d'action pour s'inscrire-->
       <div class="input-section">
         <div class="top-info">
           <h2>Deliciousness to your inbox</h2>
-          <p class="light-text " style="text-align: center;">Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqut enim ad minim   </p>
+          <p class="light-text" style="text-align: center">
+            Lorem ipsum dolor sit amet, consectetuipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqut enim ad minim
+          </p>
         </div>
         <form action="">
-          <input placeholder="You're email address" type="text">
+          <input placeholder="You're email address" type="text" />
           <button class="main-button">Subscribe</button>
         </form>
       </div>
+      <!--Footer du site avec lien et réseaux-->
       <footer>
         <div class="footer-top">
           <div class="footer-left">
-            <img src="/assets/svg/Foodieland..svg" alt="">
+            <img src="/assets/svg/Foodieland..svg" alt="" />
             <p class="light-text">
-              Lorem ipsum dolor sit amet, consectetuipisicing elit, 
+              Lorem ipsum dolor sit amet, consectetuipisicing elit,
             </p>
           </div>
           <div class="footer-right">
@@ -304,9 +326,7 @@
         </div>
         <div class="footer-bottom">
           <div></div>
-          <p class="light-text">
-            © 2024 Boularand Killian / Ecole By cci
-          </p>
+          <p class="light-text">© 2024 Boularand Killian / Ecole By cci</p>
           <div class="social">
             <img class="social-icon" src="/assets/svg/facebook.svg" alt="" />
             <img class="social-icon" src="/assets/svg/twitter.svg" alt="" />
@@ -316,4 +336,8 @@
       </footer>
     </div>
   </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
